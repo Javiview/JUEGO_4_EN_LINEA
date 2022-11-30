@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.tablero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.back{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.333);
+	z-index: 2;
+	position:fixed;
+	top: 0px;
+}
+.cardWinner {
+	background-color: white;
+	width: 300px;
+	height: 150px;
+	position: fixed;
+	top: 40vh;
+	left: 40vw;
+	z-index: 4;
+	border: 2px solid blue;
+	border-radius: 15px;
+	color: rgb(28, 27, 27);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cara1 {
+	height: 10px;
+	width: 300px;
+	background-color: rgb(29, 36, 136);
+	position: relative;
+	left: 205px;
+	top: 165px;
+	rotate: 90deg;
+	transform: skew(-45deg) translateX(5.5px);
+}
+.cara2 {
+	height: 10px;
+	width: 100%;
+	background-color: rgb(29, 36, 136);
+	position: relative;
+	left: 0px;
+	top: 310px;
+	transform: skew(45deg) translateX(5.5px);
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: fit-content;
+	background-color: rgb(45, 57, 227);
+}
+.circle {
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+	background-color: rgb(231, 238, 218);
+	border-radius: 50%;
+	box-shadow: inset 3px 3px 2px rgb(28, 27, 27);
+}
+.circle:hover {
+	cursor: pointer;
+}
+.hover-red {
+	border: 3px solid red;
+}
+.hover-yellow{
+	border: 3px solid rgb(221, 255, 0);
+}
+.red {
+	background-color: rgb(219, 52, 52);
+	box-shadow: inset 2px 2px rgb(28, 27, 27);
+}
+.yellow {
+	background-color: rgb(244, 226, 90);
+	box-shadow: inset 2px 2px rgb(28, 27, 27);
+}

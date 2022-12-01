@@ -9,7 +9,7 @@
 	--tablero-luz-color: rgb(51, 109, 255);
 }
 body{
-	background-image: url(../images/background_4enlinea2.jpg);
+	background-image: url(../images/card_ganador_amarillo.png);
 }
 .container {
 	display: flex;

@@ -24,15 +24,16 @@ crearTablero();
 function crearMensajeFinal(jugador) {
 	let imgGanador;
 	if (jugador == "red") {
-		imgGanador = "<img src=/../images/card_ganador_rojo.png width='400'>";
+		imgGanador = "<div class='win win-red'></div>";
 	} else {
-		imgGanador = "<img src=/../images/card_ganador_amarillo.png width='400'>";
+		
+		imgGanador = "<div class='win win-yellow'></div>";
 	}
 	document.body.innerHTML +=
 		"<div class='back'><div class='cardWinner'>" +
 		imgGanador +
 		"<button class='btn-revancha' onclick=refrescar()>¡Revancha!</button>" +
-		"</div></div>";
+		"</div>";
 }
 function refrescar() {
 	location.reload();

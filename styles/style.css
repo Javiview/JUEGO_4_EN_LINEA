@@ -9,7 +9,7 @@
 	--tablero-luz-color: rgb(51, 109, 255);
 }
 body{
-	background-image: url(../images/card_ganador_amarillo.png);
+	background-image: url(../images/background_4enlinea2.jpg);
 }
 .container {
 	display: flex;
@@ -17,20 +17,33 @@ body{
 	align-items: flex-start;
 	height: 100%;
 }
+.win{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 400px;
+	height: inherit;
+}
+.win-red {
+	background-image: url(../images/card_ganador_rojo.png);
+}
+.win-yellow {
+	background-image: url(../images/card_ganador_amarillo.png);
+}
 .back{
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.573);
 	z-index: 2;
 	position:fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	top: 0px;
 }
 .cardWinner {
 	width: 400px;
 	height: 320px;
-	position: fixed;
-	top: 20vh;
-	left: 40vw;
 	z-index: 4;
 	border-radius: 15px;
 	background-color: rgba(231, 238, 218, 0.662);
@@ -39,13 +52,14 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 20px;
 }
 .btn-revancha {
 	color:white;
 	font-size: 15px;
 	background-color: rgb(219, 52, 52);
 	border: 2px solid rgb(219, 52, 52);
-	margin-top: 10px;
+	margin-top: 20px;
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;

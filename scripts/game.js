@@ -189,8 +189,8 @@ function ponerFicha(dom) {
 }
 function terminarJuego() {
 	if (turnoRojo) {
-		crearMensajeFinal("Amarillo");
+		crearMensajeFinal("yellow");
 	} else {
-		crearMensajeFinal("Rojo");
+		crearMensajeFinal("red");
 	}
 }

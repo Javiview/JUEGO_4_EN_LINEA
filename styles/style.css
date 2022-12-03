@@ -1,15 +1,18 @@
+/* GLOBALES */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 :root {
-	--tablero-color:rgb(31, 89, 236);
+	--tablero-color: rgb(31, 89, 236);
 	--tablero-sombra-color: rgb(27, 80, 212);
 	--tablero-luz-color: rgb(51, 109, 255);
 }
-body{
-	background-image: url(../images/background_4enlinea2.jpg);
+
+/* MAIN */
+body {
+	background-image: url(../images/background_4enlinea.jpg);
 }
 .container {
 	display: flex;
@@ -17,7 +20,9 @@ body{
 	align-items: flex-start;
 	height: 100%;
 }
-.win{
+
+/* SI GANA */
+.win {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -30,12 +35,12 @@ body{
 .win-yellow {
 	background-image: url(../images/card_ganador_amarillo.png);
 }
-.back{
+.back {
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.573);
 	z-index: 2;
-	position:fixed;
+	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,7 +60,7 @@ body{
 	padding: 20px;
 }
 .btn-revancha {
-	color:white;
+	color: white;
 	font-size: 15px;
 	background-color: rgb(219, 52, 52);
 	border: 2px solid rgb(219, 52, 52);
@@ -67,20 +72,20 @@ body{
 .btn-revancha:hover {
 	background-color: rgb(167, 39, 39);
 	border-color: rgb(167, 39, 39);
-	
 }
 .btn-revancha:active {
 	background-color: white;
 	color: rgb(167, 39, 39);
 	border-color: rgb(167, 39, 39);
 }
+
+/* TABLERO DE JUEGO */
 #tablero {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
 	margin-top: 100px;
-	
 }
 .peana-arriba {
 	height: 150px;
@@ -102,7 +107,7 @@ body{
 	z-index: -1;
 	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.241);
 }
-.peana-derecha{
+.peana-derecha {
 	height: 10.5px;
 	width: 173px;
 	background-color: var(--tablero-luz-color);
@@ -113,7 +118,7 @@ body{
 	left: 475px;
 	z-index: -1;
 }
-.tablero-derecha{
+.tablero-derecha {
 	height: 10px;
 	width: 498px;
 	background-color: var(--tablero-luz-color);
@@ -124,7 +129,7 @@ body{
 	left: 315px;
 	z-index: -1;
 }
-.tablero-arriba{
+.tablero-arriba {
 	height: 15px;
 	width: 561px;
 	background-color: var(--tablero-luz-color);
@@ -138,7 +143,7 @@ body{
 	display: flex;
 	height: fit-content;
 	width: fit-content;
-	background-color: var(--tablero-color)
+	background-color: var(--tablero-color);
 }
 .circle {
 	margin: 5px;
@@ -149,22 +154,19 @@ body{
 	box-shadow: inset 3px 3px 1px rgb(28, 27, 27);
 }
 .circle {
-	
 	cursor: url("../images/cursor.png"), pointer;
 }
-
 .hover-red {
 	border: 4px solid red;
 }
-.hover-yellow{
-	
+.hover-yellow {
 	border: 4px solid rgb(244, 226, 90);
 }
 .red {
 	background-color: rgb(219, 52, 52);
-	box-shadow: inset 2px 2px rgba(34, 33, 33, 0.941),inset -2px -3px rgb(167, 39, 39);
+	box-shadow: inset 2px 2px rgba(34, 33, 33, 0.941), inset -2px -3px rgb(167, 39, 39);
 }
 .yellow {
 	background-color: rgb(244, 226, 90);
-	box-shadow: inset 2px 2px rgba(34, 33, 33, 0.941),inset -2px -3px rgb(201, 186, 73);
+	box-shadow: inset 2px 2px rgba(34, 33, 33, 0.941), inset -2px -3px rgb(201, 186, 73);
 }
